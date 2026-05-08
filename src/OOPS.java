@@ -1,30 +1,14 @@
-interface Animal {
-    public void walk();
-}
+class student {
+    static String schoolName;
 
-interface Herbivore {
-
-}
-
-interface Carnivore {
-
-}
-
-class Horse implements Animal, Herbivore {
-    public void walk() {
-        System.out.println("Herbivore");
-    }
-}
-
-class Tiger implements Animal, Carnivore {
-    public void walk() {
-        System.out.println("Carnivore");
+    public static void changeSchool() {
+        schoolName = "Nalanda";
     }
 }
 
 public class OOPS {
     public static void main(String args[]) {
-        Horse horse = new Horse();
-        horse.walk();
+        student.schoolName = "LAS";
+        System.out.println(student.schoolName);
     }
 }

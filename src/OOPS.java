@@ -2,9 +2,23 @@ interface Animal {
     public void walk();
 }
 
-class Horse implements Animal {
+interface Herbivore {
+
+}
+
+interface Carnivore {
+
+}
+
+class Horse implements Animal, Herbivore {
     public void walk() {
-        System.out.println("HORSE");
+        System.out.println("Herbivore");
+    }
+}
+
+class Tiger implements Animal, Carnivore {
+    public void walk() {
+        System.out.println("Carnivore");
     }
 }
 
